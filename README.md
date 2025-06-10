@@ -6,11 +6,15 @@ Then replace the current `h1` with the Renovate Issue/Discussion number.
 
 ## Current behavior
 
-Explain the current behavior here.
+The contents of `uv.lock` are erased when incrementing the package's `requires-python` then running `uv lock --upgrade-package python` (which is the command that `renovate` runs to update the lockfile)
+
+[Example renovate PR](https://github.com/nrlulz/renovate-bug-repro/pull/1/files)
+
+[Renovate log](./log.json)
 
 ## Expected behavior
 
-Explain the expected behavior here.
+`uv.lock` is updated with the new requires-python constraint and no other changes.
 
 ## Link to the Renovate issue or Discussion
 
