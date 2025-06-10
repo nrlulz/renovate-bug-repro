@@ -2,4 +2,4 @@
 name = "renovate-bug-repro"
 version = "0.1.0"
 requires-python = "==3.11.12"
-dependencies = ["requests>=2.32.4"]
+dependencies = ["opencv-python-headless>=4.11.0.86"]
